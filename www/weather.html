@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content='width=640, user-scalable=no, target-densitydpi=device-dpi'>
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    
+    <script></script>
+</head>
+<body>
+    <div id="app" >
+        <div id="header" @click="changeBlue()">
+            <a href="index.html" ><img id="return" src="return.png" onclick="window.localStorage.setItem('return','return');"></a>
+            <img class="imgg" src="setting.png" onclick="$('#settingMenu').fadeIn(200);">
+        </div>
+        <br>
+        <!-- <h1>{{wList}}</h1> -->
+        
+        <h1 id="kkkk">BKC 降水確率</h1>
+        <!-- <div id="infor_botton" @click="infoClick()">＋通知</div> -->
+        
+        <div class="display">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="dackScrenn" v-show="show" @click="disInfoClick()"></div>
+        
+            <div id="info_box" v-show="show">
+                <h1 class="hh1">定時通知</h1>
+                <h2>通知時間</h2><input id=iinput type="time">
+                <h2>通知内容</h2><select id="sselect"><option>雨の日</option></select>
+                <div id="tinfo">通知</div>
+                <h1 id="bood">-----------------------------------</h1>
+                <h1 class="hh1">速報通知</h1>
+                <h2>通知時間</h2><input id=iiinput type="time">
+                <h2>通知内容</h2><select id="ssselect"><option>雨の日</option></select>
+                <div id="sinfo">通知</div>
+            </div>
+        
+    </div>
+
+    <div id="settingMenu" >
+        <img id="batu"src="batu.png" onclick='$(this).parent().hide(200);'>
+        <div id="ber">
+            <div onclick="$('.coverr').fadeIn(200);">
+                <h1>デフォルト画面</h1>
+                <div class="coverr">
+                 <img id="indexhtml" class="defImg" src="def.PNG"><img id="bikehtml" class="defImg" src="tyuurinn.PNG" ><img id="weatherhtml" class="defImg" src="picture/kousui.PNG" onclick=""><img id="sisetuhtml" class="defImg" src="picture/sisetu.PNG">         
+                </div>            
+            </div>
+            <div onclick="$('#colorMenu').fadeIn(200);">
+                <h1>ベースカラー</h1>
+                <div id="colorMenu">
+                    <button id="redMenu" onclick="$('#header,.display').css('background-color','#E57373'); $('body').css('background-color','#F6E1E1'); $('#kkkk').css('color','black');window.localStorage.setItem('color',null);">赤</button>
+                    <button id="blueMenu" onclick="$('#header,.display').css('background-color','#5D70A3'); $('body').css('background-color','#D6E5ED');$('#kkkk').css('color','black');window.localStorage.setItem('color','blue');">青</button>
+                    <button id="blackMenu" onclick="$('#header,.display').css('background-color','#817F7F'); $('body').css('background-color','#000000');$('#kkkk').css('color','white'); window.localStorage.setItem('color','black');">黒</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>window.localStorage.setItem('return','no');
+        if(!window.localStorage.getItem('color')){}else if(window.localStorage.getItem('color')=='blue'){
+            $('#header,.display').css('background-color','#5D70A3'); $('body').css('background-color','#D6E5ED');window.localStorage.setItem('color','blue');}else if(window.localStorage.getItem('color')=='black'){
+                $('#header,.display').css('background-color','#817F7F'); $('body').css('background-color','#000000'); $('#kkkk').css('color','white');window.localStorage.setItem('color','black');}
+                if(window.localStorage.getItem('situ')=='tyuurinn.PNG'){
+        
+                $('#bikehtml').attr('id', 'Imgs');
+        }else{
+            $('#indexhtml').attr('id', 'Imgs');
+        }
+        $('.defImg').on('click',function(){
+        let vaa=$(this).attr('src');
+//       console.log(vaa);
+        window.localStorage.setItem('situ',vaa);
+//        console.log(window.localStorage.getItem('situ'));
+        $('.defImg').removeAttr('id', 'Imgs');
+
+        $(this).attr('id', 'Imgs');
+        })
+                </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2/dist/vue.global.js"></script>
+    <script src="weather.js"></script>
+    <script>
+
+  </script>
+</body>
+</html>

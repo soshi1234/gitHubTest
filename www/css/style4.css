@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* タブメニュー */
+
+.container{
+    margin: 0;
+
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li a{
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+    padding: 16px;
+  color: #555;
+  text-decoration: none; 
+    /* border: 10px solid #ccc; */
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: #ccc 0 0 8px ;
+
+}
+
+.menu li a.active{
+  background: lightgoldenrodyellow;
+  color: #ccc;
+  
+}
+
+
+
+.content.active{
+  background: lightgoldenrodyellow;
+  color: black;
+  display: block;
+  padding: 24px;
+}
+
+.content{
+  display: none;
+  
+}
+
+
+
+
+.bi-link-45deg{
+
+    border-radius: 4px;
+    font-size: 48px;
+    background: rgb(150, 187, 199);
+    padding: 4px 0 0 0 ;
+    color: #fff;
+}
+
+
+

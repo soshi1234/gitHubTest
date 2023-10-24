@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=640, user-scalable=no, target-densitydpi=device-dpi'>
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+  <header>        
+    <img class="imgg" src="setting.png"
+    alt="設定アイコン"onclick="$('#settingMenu').fadeIn(200);">
+  </header>
+
+  <main>
+    <a href="bike.html" class="box-1"><img src="picture/home/S__8675333_0.jpg"></a>
+    <a href="sisetu.html" class="box-2"><img src="picture/home/S__8675330_0.jpg"></a>
+    <!-- <a href="" class="box-3">施設時間</a> -->
+    <!-- <div class="box-3">
+      <img class="boxs" src="picture/home/sisetuzikann.jpg"></img>
+    </div > -->
+    <a href="weather.html" class="box-4"><img src="picture/home/S__8675334_0.jpg"></a>
+  </main>
+
+  <script src="changeColor.js"></script> 
+
+  <div id="settingMenu">
+    <img id="batu"src="batu.png" onclick='$(this).parent().hide(200);'>
+    <div id="ber">
+        <div onclick="$('.coverr').fadeIn(200);">
+            <h1>デフォルト画面</h1>
+            <div class="coverr">
+             <img id="indexhtml" class="defImg" src="def.PNG"><img id="bikehtml" class="defImg" src="tyuurinn.PNG" ><img id="weatherhtml" class="defImg" src="picture/kousui.PNG" onclick=""><img id="sisetuhtml" class="defImg" src="picture/sisetu.PNG">         
+            </div>            
+        </div>
+        <div onclick="$('#colorMenu').fadeIn(200);">
+            <h1>ベースカラー</h1>
+            <div id="colorMenu">
+                <button id="redMenu">赤</button>
+                <button id="blueMenu">青</button>
+                <button id="blackMenu">黒</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+ 
+</body>
+</html

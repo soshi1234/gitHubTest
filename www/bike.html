@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=640, user-scalable=no, target-densitydpi=device-dpi'>
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/bike.css">
+    <script>
+
+    </script>
+</head>
+<body>
+   <div class="header">
+       <a href="index.html" ><img id="return" src="return.png" onclick="window.localStorage.setItem('return','return');"></a>
+       <img src="setting.png" onclick="$('#settingMenu').fadeIn(200);">
+   </div>
+   <div class="top">  
+   </div>
+   <div class="left">
+   </div>
+   <div class="right">
+   </div>
+   <div class="bottom">
+   </div>
+   <div id="screen"><img src="map.png"></div>
+    <div id="bike">
+        <img src="bike20.png">
+    </div>
+   </div>
+   <div class="botton" id="botton-A">A</div>
+   </div>
+   <div class="botton" id="botton-B">B</div>
+   </div>
+   <div class="botton" id="botton-C">C</div>
+   </div>
+   <div class="botton" id="botton-D">D</div>
+   </div>
+   <div class="botton" id="botton-E">E</div>
+   </div>
+   <div class="botton" id="botton-bike"><img src="bike20.png"></div>
+　　<div id="kannbann1"><h1>道路側</h1></div>
+    <div id="kannbann2"><h1>学校側</h2></div>
+    <div class="tapsii">地図タップして場所を保存</div>
+<script src="bike.js"></script>
+<div class="maku1"></div>
+<div class="maku2"></div>
+<div id="settingMenu">
+    <img id="batuu" src="batu.png" onclick='$(this).parent().hide(200);'>
+    <div id="ber">
+        <div id="defMenu" onclick="$('.defImg').fadeIn(200);">
+            
+            <h1>デフォルト画面</h1>
+            <img id="indexhtml" class="defImg" src="def.PNG">
+            <img id="bikehtml" class="defImg" src="tyuurinn.PNG" >
+            <img id="weatherhtml" class="defImg" src="picture/kousui.PNG" onclick=""><img id="sisetuhtml" class="defImg" src="picture/sisetu.PNG">            
+        </div>
+        <div onclick="$('#colorMenu').fadeIn(200);">
+            <h1>ベースカラー</h1>
+            <div id="colorMenu">
+                <button id="redMenu">赤</button>
+                <button id="blueMenu">青</button>
+                <button id="blackMenu">黒</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

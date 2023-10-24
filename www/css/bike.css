@@ -1,0 +1,285 @@
+/* This is a CSS file */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+body{
+    margin: 0;
+}
+#return{
+    position: fixed;
+    top:30px;
+    left:30px;
+}
+
+.header{
+    position: fixed;
+    background-color:#EB5A5A;
+    width:640px;
+    height:100px;
+    box-shadow: 2px 0px 2px 2px #bbb; 
+}
+.top{
+    top:100px;
+    position: fixed;
+    background-color:#F6E1E1;
+    width:640px;
+    height:50px;
+}
+.left{
+    top:150px;
+    background-color:#F6E1E1;
+    position: fixed;
+    width:20px;
+    height:640px;
+}
+.right{
+    top:150px;
+    background-color:#F6E1E1;
+    width:20px;
+    height:640px;
+    position: fixed;
+    right: 0px;
+}
+.bottom{
+    position: fixed;
+    top:750px;
+    background-color:#F6E1E1;
+    width:640px;
+    height:100%;
+}
+
+#screen{
+    position: absolute;
+    top:150px;
+    left:20px;
+    width: 1798px;
+    height: 600px;
+    background-color: blue;
+    z-index: -10;
+
+}
+#bike{
+    position: absolute;
+    top:10000px;
+    z-index: 1000;
+    display: none;
+}
+.botton{
+    font-size: 40px;
+    top:800px;
+    position: fixed;
+    z-index: 100;
+    text-align:center;
+    color: white;
+    height: 120px;
+    line-height:120px;
+    box-shadow: 2px 2px 2px 2px #bbb; 
+　　z-index:10;
+        border-radius:4px;
+    overflow: hidden;
+}
+#botton-A{
+    width: 80px;
+    left:20px;
+    
+    background-color:#FFA081;
+
+    
+}
+#botton-B{
+    width: 80px;
+    left:125px;
+    
+    background-color:#FD97BC;
+    
+}
+#botton-C{
+    width: 80px;
+    left:230px;
+    
+    background-color:#384CFE;
+    
+}
+#botton-D{
+    width: 80px;
+    left:335px;
+    
+    background-color:#FF74B7;
+    
+}
+#botton-E{
+    width: 80px;
+    left:444px;
+    
+    background-color:#2EDF60;
+    
+}
+#botton-bike{
+    width: 80px;
+    left:540px;
+    padding-top:30px;
+    background-color:white;
+    height: 90px;
+    
+}
+.maku1{
+    background-color:#EB5A5A;
+
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    left: -1000px;
+}
+.maku2{
+    background-color:#EB5A5A;
+
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    right: 1000px;
+}
+#kannbann1{
+    top: 150px;
+    position: fixed;
+    color: white;
+    align-items: center;
+    width: 100%;
+
+}
+#kannbann1 h1{
+    text-align:center;
+ text-shadow:
+            3px 3px 3px #000, -3px -3px 3px #000,
+           -3px 3px 3px #000,  3px -3px 3px #000;
+}
+#kannbann2{
+    top: 700px;
+    position: fixed;
+    color: white;
+    align-items: center;
+    width: 100%;
+
+}
+#kannbann2 h1{
+    text-align:center;
+     text-shadow:
+            3px 3px 3px #000, -3px -3px 3px #000,
+           -3px 3px 3px #000,  3px -3px 3px #000;
+}
+#kannbann1 h1{
+    text-align:center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow:
+            1px 1px 1px #000, -1px -1px 1px #000,
+           -1px 1px 1px #000,  1px -1px 1px #000;
+}
+#kannbann2{
+    top: 680px;
+    position: fixed;
+    color: white;
+    align-items: center;
+    width: 100%;
+
+}
+#kannbann2 h1{
+    text-align:center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+     text-shadow:
+            1px 1px 1px #000, -1px -1px 1px #000,
+           -1px 1px 1px #000,  1px -1px 1px #000;
+}
+.tapsi{
+    font-size: 30px;
+    position: fixed;
+    width: 100%;
+    top: 400px;
+    text-align: center;
+    z-index: 1000;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow:
+    1px 1px 1px #000, -1px -1px 1px #000,
+           -1px 1px 1px #000,  1px -1px 1px #000;
+}
+/*ここから設定メニュー*/
+#settingMenu{
+    display: none;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.293);
+    z-index: 100000;
+    padding: 0;
+}
+#ber{
+    margin-top: 100px;
+    margin-left:140px ;
+    
+    top:0px;
+    width: 500px;
+    padding: 10px 0 10px 0;
+    background-color: #ece8e8;
+}
+#ber div{
+    border-radius:10px;
+    
+    text-align: center;
+    margin:20px;
+    background-color: white;
+    padding: 0;
+}
+#ber div h1{
+    font-family:'ヒラギノ角ゴ ProN W3', sans-serif;
+    font-size: 50px;
+}
+#batuu{
+    left: 35px;
+    position: absolute;
+    top: 70px;
+    zoom:150%;
+}
+.header img{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+#ber div button{
+
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: 0;
+  line-height: 2.5;
+  padding: 10px 40px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+#redMenu{
+    background-color: #EB5A5A;
+}
+#blueMenu{
+    background-color: #5D70A3;
+}
+#blackMenu{
+    background-color: black;
+}
+#colorMenu{
+    display: none;
+}
+.defImg{
+    display: none;
+    height: 600px;
+    zoom: 40%; 
+    margin:10px 60px 10px 60px;
+    border-radius: 5%;
+
+}
+#Imgs{
+     border: solid 20px #384CFE; 
+}

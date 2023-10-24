@@ -1,0 +1,2258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=640, user-scalable=no, target-densitydpi=device-dpi'>
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/style5.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+</head>
+<body>
+    <header>
+      <a id="return" href="index.html" ><img  src="return.png" onclick="window.localStorage.setItem('return','return');"></a>
+    <div class="search-area">
+        <form>
+          <input type="text" name="searching" id="search-text" placeholder="検索ワードを入力">
+        </form>
+        <div class="search-result">
+          <div class="search-result__hit-num"></div>
+          <div id="search-result__list"></div>
+        </div>
+    </div>
+
+    <i class="bi bi-search"></i> 
+    
+      <img id="settingss" src="setting.png" alt="設定アイコン" width="96" height="96" onclick="$('#settingMenu').fadeIn(200);">
+    
+  </header>
+
+  <main>
+    <div class="first">
+      <dl class="target-area">
+        <div id="ichi"></div>
+        <div class="map"><img src="map.jpg" alt="キャンパスマップ" width="1000" height="1000"></div>
+      </dl>
+    </div>
+
+
+    <div class="second target-area">
+      
+        <dl class="target-area">
+          <div id="ni">
+            <dt class="many"><a href="#ni"><i class="bi bi-stars"></i>&emsp;ユニオンスクエア</a></dt>
+                        
+            <dd class="n1">&nbsp;<a href="#yunicafe">ユニオンカフェテリア</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a1">開講期間</a></li>
+                    <li><a href="#" data-id="a2">土日祝</a></li>
+                    <li><a href="#"data-id="a3">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a1">
+                        <dd class="zikan">&emsp;8:00～9:00</dd>
+                        <dd class="zikan">&emsp;10:30～20:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a2">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a3">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n2">&nbsp;<a href="#yunitei">ユニオンフードコート&nbsp;(定食)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a4">開講期間</a></li>
+                    <li><a href="#" data-id="a5">土日祝</a></li>
+                    <li><a href="#"data-id="a6">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a4">
+                        <dd class="zikan">&emsp;11:00～14:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a5">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a6">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n3">&nbsp;<a href="#yunihara">ユニオンフードコート&nbsp;(ハラル)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a7">開講期間</a></li>
+                    <li><a href="#" data-id="a8">土日祝</a></li>
+                    <li><a href="#"data-id="a9">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a7">
+                        <dd class="zikan">&emsp;11:30～14:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a8">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a9">
+                        <dd class="zikan">&emsp;閉店</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n4">&nbsp;<a href="#yunishop">ユニオンショップ</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a10">開講期間</a></li>
+                    <li><a href="#" data-id="a11">土日祝</a></li>
+                    <li><a href="#"data-id="a12">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a10">
+                        <dd class="zikan">&emsp;8:30～20:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a11">
+                        <dd class="zikan">&emsp;10:00～15:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a12">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n5">&nbsp;<a href="#yuniclean">クリーニング</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a13">開講期間</a></li>
+                    <li><a href="#" data-id="a14">土日祝</a></li>
+                    <li><a href="#"data-id="a15">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a13">
+                        <dd class="zikan">&emsp;10:15～15:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a14">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a15">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+         </div>
+
+         <div id="rinku">
+            <dt class="many"><a href="#rinku"><i class="bi bi-stars"></i>&emsp;リンクスクエア</a></dt>
+                        
+            <dd class="n6">&nbsp;<a href="#rinkucafe">リンクカフェテリア</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a16">開講期間</a></li>
+                    <li><a href="#" data-id="a17">土日祝</a></li>
+                    <li><a href="#"data-id="a18">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a16">
+                        <dd class="zikan">&emsp;10:30～14:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a17">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a18">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n7">&nbsp;<a href="#rinkumeal">リンクミールショップ</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a19">開講期間</a></li>
+                    <li><a href="#" data-id="a20">土日祝</a></li>
+                    <li><a href="#"data-id="a21">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a19">
+                        <dd class="zikan">&emsp;10:15～18:30</dd>
+                        <dd class="zikan">&emsp;(15:00～&emsp;無人営業)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a20">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a21">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n8">&nbsp;<a href="#rinkupc">リンクショップ&nbsp;(PCs&nbsp;,BOOK)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a22">開講期間</a></li>
+                    <li><a href="#" data-id="a23">土日祝</a></li>
+                    <li><a href="#"data-id="a24">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a22">
+                        <dd class="zikan">&emsp;10:00～16:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                        <dd class="zikan">※教科書販売&nbsp;(秋)</dd>
+                    </section>      
+                    <section class="content" id="a23">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a24">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n9">&nbsp;<a href="#rinkutravel">リンクショップ&nbsp;(Travel)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a25">開講期間</a></li>
+                    <li><a href="#" data-id="a26">土日祝</a></li>
+                    <li><a href="#"data-id="a27">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a25">
+                        <dd class="zikan">&emsp;11:00～16:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a26">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a27">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n10">&nbsp;<a href="#rinkucenter">BKCセンター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a28">開講期間</a></li>
+                    <li><a href="#" data-id="a29">土日祝</a></li>
+                    <li><a href="#"data-id="a30">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a28">
+                        <dd class="zikan">&emsp;10:15～16:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a29">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="a30">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+            <dd class="n11">&nbsp;<a href="#rinkusumai">BKC住まい探しセンター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="b28">開講期間</a></li>
+                    <li><a href="#" data-id="b29">土日祝</a></li>
+                    <li><a href="#"data-id="b30">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="b28">
+                        <dd class="zikan">&emsp;10:15～16:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b29">
+                        <dd class="zikan">&emsp;閉店</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※補講日・土曜授業日・祝日授業日についてはHPにてご確認ください。</dd>
+                    </section>
+                    <section class="content" id="b30">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n12">&nbsp;<a href="#chemistry">化学・生物駆け込み寺</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a31">開講期間</a></li>
+                    <li><a href="#" data-id="a32">土日祝</a></li>
+                    <li><a href="#"data-id="a33">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a31">
+                        <dd class="zikan">(月・火・金)</dd>
+                        <dd class="zikan">&emsp;16:30～18:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水・木)</dd>
+                        <dd class="zikan">&emsp;18:00～20:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(10/2～1/19)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a32">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a33">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                </div>
+                </dd>
+
+            <dd class="n13">&nbsp;<a href="#seimei">生命科学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#"  data-id="b31">開講期間</a></li>
+                    <li><a href="#" data-id="b32">土日祝</a></li>
+                    <li><a href="#"data-id="b33">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="b31">
+                        <dd class="zikan">(火・水・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(月)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b32">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="b33">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+                
+              </dd>
+         </div>
+
+        <div id="central">
+            <dt class="many"><a href="#central"><i class="bi bi-stars"></i>&emsp;セントラルアーク</a></dt>    
+
+            <dd class="n14">&nbsp;<a href="#dream">ドリームクロスカフェ</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a34">開講期間</a></li>
+                    <li><a href="#" data-id="a35">土日祝</a></li>
+                    <li><a href="#"data-id="a36">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a34">
+                        <dd class="zikan">&emsp;11:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a35">
+                        <dd class="zikan">&emsp;閉店</dd>
+                    </section>
+                    <section class="content" id="a36">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n15">&nbsp;<a href="#office">BKC学生オフィス</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a37">開講期間</a></li>
+                    <li><a href="#" data-id="a38">土日祝</a></li>
+                    <li><a href="#"data-id="a39">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a37">
+                        <dd class="zikan">(月・水・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(火)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a38">
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(授業日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(定期試験日・補講日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a39">
+                        <dd class="zikan">(月・水・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(火)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+                   <dd class="n16">&nbsp;<a href="#shien">障害学生支援室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a40">開講期間</a></li>
+                    <li><a href="#" data-id="a41">土日祝</a></li>
+                    <li><a href="#"data-id="a42">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a40">
+                        <dd class="zikan">(月・水・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(火)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a41">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a42">
+                        <dd class="zikan">(月・水・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(火)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n17">&nbsp;<a href="#bbp">Beyond&nbsp;Borders&nbsp;Plaza</a></dd>
+                
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a43">開講期間</a></li>
+                    <li><a href="#" data-id="a44">土日祝</a></li>
+                    <li><a href="#"data-id="a45">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a43">
+                        <dd class="zikan">空きコマに予約指定</</dd>
+                    </section>      
+                    <section class="content" id="a44">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a45">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n18">&nbsp;<a href="#kokusai">国際教育センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a46">開講期間</a></li>
+                    <li><a href="#" data-id="a47">土日祝</a></li>
+                    <li><a href="#"data-id="a48">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a46">
+                        <dd class="zikan">(月・火・水・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(木)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a47">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a48">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n19">&nbsp;<a href="#language">言語教育センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a49">開講期間</a></li>
+                    <li><a href="#" data-id="a50">土日祝</a></li>
+                    <li><a href="#"data-id="a51">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a49">
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a50">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a51">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+                <dd class="n20">&nbsp;<a href="#acquire">言語習得センター&nbsp;(CLA)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="b49">開講期間</a></li>
+                    <li><a href="#" data-id="b50">土日祝</a></li>
+                    <li><a href="#"data-id="b51">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="b49">
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b50">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="b51">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n21">&nbsp;<a href="#support">学生サポートセンター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a52">開講期間</a></li>
+                    <li><a href="#" data-id="a53">土日祝</a></li>
+                    <li><a href="#"data-id="a54">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a52"> 
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a53">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a54">
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+         </div> 
+         
+        <div id="akuros">
+            <dt class="many"><a href="#akuros"><i class="bi bi-stars"></i>&emsp;アクロスウィング</a></dt>
+                        
+            <dd class="n22">&nbsp;<a href="#progress">ベーカリーカフェプログレッソ</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a55">開講期間</a></li>
+                    <li><a href="#" data-id="a56">土日祝</a></li>
+                    <li><a href="#"data-id="a57">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a55">
+                        <dd class="zikan">&emsp;11:00～14:30</dd>
+                        <dd class="zikan">&emsp;(10/2～&nbsp;OPEN)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a56">
+                        <dd class="zikan">&emsp;閉店</dd>
+                    </section>
+                    <section class="content" id="a57">
+                        <dd class="zikan">&emsp;閉店</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n23">&nbsp;<a href="#commons">BKC COMMONS</a></dd>
+                         
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a58">開講期間</a></li>
+                    <li><a href="#" data-id="a59">土日祝</a></li>
+                    <li><a href="#"data-id="a60">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a58">
+                        <dd class="zikan">&emsp;9:00～22:00&emsp;(一部予約)</dd>
+                    </section>      
+                    <section class="content" id="a59">
+                        <dd class="zikan">&emsp;9:00～22:00&emsp;(一部予約)</dd>
+                        
+                    </section>
+                    <section class="content" id="a60">
+                        <dd class="zikan">&emsp;9:00～22:00&emsp;(一部予約)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は利用不可</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n24">&nbsp;<a href="#library">メディアライブラリー</a><br><br>&nbsp;(<a href="#piara" class="m28">ぴあら</a>&nbsp;/&nbsp;<a href="#mult" class="m27">マルチメディアルーム</a>)</dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a61">開講期間</a></li>
+                    <li><a href="#" data-id="a62">土日祝</a></li>
+                    <li><a href="#"data-id="a63">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a61">
+                        <dd class="zikan">&emsp;8:30～22:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">[ぴあら]</dd>
+                        <dd class="zikan">&emsp;9:00～22:00&emsp;(一部予約)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a62">
+                        <dd class="zikan">(土日)</dd>
+                        <dd class="zikan">&emsp;10:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日)</dd>
+                        <dd class="zikan">&emsp;9:00～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(祝日)</dd>
+                        <dd class="zikan">&emsp;閉館</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a63">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:00～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(土日)</dd>
+                        <dd class="zikan">&emsp;10:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(祝日)</dd>
+                        <dd class="zikan">&emsp;閉館</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n25">&nbsp;<a href="#kyosyoku">教職教育課</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a64">開講期間</a></li>
+                    <li><a href="#" data-id="a65">土日祝</a></li>
+                    <li><a href="#"data-id="a66">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a64">
+                        <dd class="zikan">(月・火・水・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(木)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a65">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a66">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n26">&nbsp;<a href="#kyosyokucenter">教職支援センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a67">開講期間</a></li>
+                    <li><a href="#" data-id="a68">土日祝</a></li>
+                    <li><a href="#"data-id="a69">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a67">
+                        <dd class="zikan">&emsp;10:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a68">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a69">
+                        <dd class="zikan">&emsp;10:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+
+        <div id="purizumu">
+            <dt class="many"><a href="#purizumu"><i class="bi bi-stars"></i>&emsp;プリズムハウス</a></dt>
+                        
+            <dd class="n27">&nbsp;<a href="#mult">マルチメディアルーム</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a70">開講期間</a></li>
+                    <li><a href="#" data-id="a71">土日祝</a></li>
+                    <li><a href="#"data-id="a72">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a70">
+                        <dd class="zikan">&emsp;8:00～22:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a71">
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日・土曜授業日・祝日授業日)</dd>
+                        <dd class="zikan">&emsp;8:00～22:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a72">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n28">&nbsp;<a href="#manabi">学びステーション</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a73">開講期間</a></li>
+                    <li><a href="#" data-id="a74">土日祝</a></li>
+                    <li><a href="#"data-id="a75">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a73">
+                        <dd class="zikan">(授業日)</dd>
+                        <dd class="zikan">&emsp;8:45～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(定期試験日)</dd>
+                        <dd class="zikan">&emsp;9:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a74">
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日・土曜授業日・祝日授業日・定期試験日)</dd>
+                        <dd class="zikan">&emsp;9:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a75">
+                        <dd class="zikan">&emsp;9:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n29">&nbsp;<a href="#kyaria">キャリアセンター</a></dd>
+
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a76">開講期間</a></li>
+                    <li><a href="#" data-id="a77">土日祝</a></li>
+                    <li><a href="#"data-id="a78">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a76">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a77">
+                        <dd class="zikan">(土曜授業日・祝日授業日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日・定期試験日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a78">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+            <dd class="n30">&nbsp;<a href="#ex">エクステーションセンター</a></dd>
+
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="b76">開講期間</a></li>
+                    <li><a href="#" data-id="b77">土日祝</a></li>
+                    <li><a href="#"data-id="b78">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="b76">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b77">
+                        <dd class="zikan">(土曜授業日・祝日授業日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日・定期試験日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="b78">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n31">&nbsp;<a href="#shinro">進路・就職ライブラリー</a></dd>
+
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="c76">開講期間</a></li>
+                    <li><a href="#" data-id="c77">土日祝</a></li>
+                    <li><a href="#"data-id="c78">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="c76">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="c77">
+                        <dd class="zikan">(授業日)</dd>
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="c78">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※春期休暇中に限る。</dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        
+          </div>  
+
+          <div id="west">
+            <dt class="many"><a href="#west"><i class="bi bi-stars"></i>&emsp;ウエストウイング</a></dt>
+                        
+            <dd class="n32">&nbsp;<a href="#physics">物理駆け込み寺</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a79">開講期間</a></li>
+                    <li><a href="#" data-id="a80">土日祝</a></li>
+                    <li><a href="#"data-id="a81">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a79">
+                        <dd class="zikan">&emsp;16:30～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">[ZOOM対応可]</dd>
+                        <dd class="zikan">&emsp;(木)</dd>
+                        <dd class="zikan">&emsp;18:00～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">&emsp;(金)</dd>
+                        <dd class="zikan">&emsp;16:30～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(10/10～1/19)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a80">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a81">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n33">&nbsp;<a href="#hoken">保健センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a82">開講期間</a></li>
+                    <li><a href="#" data-id="a83">土日祝</a></li>
+                    <li><a href="#"data-id="a84">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a82">
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a83">
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(祝日授業日・土曜授業日)</dd>
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日・定期試験日)</dd>
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan">&emsp;(※キャンパス管理室で対応)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a84">
+                        <dd class="zikan">&emsp;9:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+        <div id="east">
+            <dt class="many"><a href="#east"><i class="bi bi-stars"></i>&emsp;イーストウイング</a></dt>
+                        
+            <dd class="n34">&nbsp;<a href="#aiol">AIOL&nbsp;(アイオーラボ)</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a85">開講期間</a></li>
+                    <li><a href="#" data-id="a86">土日祝</a></li>
+                    <li><a href="#"data-id="a87">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a85">
+                        <dd class="zikan">&emsp;13:00～17:50</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a86">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a87">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;13:00～17:50</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(土日祝)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+        <div id="adoseminario">
+            <dt class="many"><a href="#adoseminario"><i class="bi bi-stars"></i>&emsp;アドセミナリオ</a></dt>
+                        
+            <dd class="n35">&nbsp;<a href="#keizai">経済学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a88">開講期間</a></li>
+                    <li><a href="#" data-id="a89">土日祝</a></li>
+                    <li><a href="#"data-id="a90">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a88">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a89">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a90">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+            <dd class="n36">&nbsp;<a href="#syokumane">食マネジメント学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a91">開講期間</a></li>
+                    <li><a href="#" data-id="a92">土日祝</a></li>
+                    <li><a href="#"data-id="a93">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a91">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a92">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a93">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+             <dd class="n37">&nbsp;<a href="#kyoyo">教養教育センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="a94">開講期間</a></li>
+                    <li><a href="#" data-id="a95">土日祝</a></li>
+                    <li><a href="#"data-id="a96">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a94">
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a95">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a96">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+            <dd class="n38">&nbsp;<a href="#kyariakyoiku">キャリア教育センター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="b94">開講期間</a></li>
+                    <li><a href="#" data-id="b95">土日祝</a></li>
+                    <li><a href="#"data-id="b96">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="b94">
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b95">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="b96">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+                <dd class="n39">&nbsp;<a href="#service">サービスラーニングセンター</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" data-id="c94">開講期間</a></li>
+                    <li><a href="#" data-id="c95">土日祝</a></li>
+                    <li><a href="#"data-id="c96">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="c94">
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="c95">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="c96">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※窓口時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+<div id="creation">
+            <dt class="many"><a href="#creation"><i class="bi bi-stars"></i>&emsp;クリエーション&emsp;コア</a></dt>
+                        
+            <dd class="n40">&nbsp;<a href="#zyori">情報理工学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a97">開講期間</a></li>
+                    <li><a href="#" data-id="a98">土日祝</a></li>
+                    <li><a href="#"data-id="a99">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a97">
+                        <dd class="zikan">(火・水・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(月)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a98">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a99">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+        <div id="core">
+            <dt class="many"><a href="#core"><i class="bi bi-stars"></i>&emsp;コアステーション</a></dt>
+                        
+            <dd class="n41">&nbsp;<a href="#riko">理工学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a100">開講期間</a></li>
+                    <li><a href="#" data-id="a101">土日祝</a></li>
+                    <li><a href="#"data-id="a102">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a100">
+                        <dd class="zikan">(火・水・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(月)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a101">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="a102">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+
+                        
+            <dd class="n42">&nbsp;<a href="#kyankan">キャンパス管理室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#"  data-id="a103">開講期間</a></li>
+                    <li><a href="#" data-id="a104">土日祝</a></li>
+                    <li><a href="#"data-id="a105">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="a103">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:00～17:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">24時間&emsp;警備員常駐</dd>
+                    </section>      
+                    <section class="content" id="a104">
+                        <dd class="zikan">&emsp;閉室</dd> 
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">24時間&emsp;警備員常駐</dd>
+                    </section>
+                    <section class="content" id="a105">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:00～17:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日)</dd>
+                         <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">24時間&emsp;警備員常駐</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+        <div id="science">
+            <dt class="many"><a href="#science"><i class="bi bi-stars"></i>&emsp;サイエンス&emsp;コア</a></dt>
+                        
+            <dd class="n43">&nbsp;<a href="#yaku">薬学部事務室</a></dd>
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="b100">開講期間</a></li>
+                    <li><a href="#" data-id="b101">土日祝</a></li>
+                    <li><a href="#"data-id="b102">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="b100">
+                        <dd class="zikan">(火・水・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(月)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="b101">
+                        <dd class="zikan">(授業日)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日・補講日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                         <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="b102">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+                <div id="rarukadelia">
+            <dt class="many"><a href="#rarukadelia"><i class="bi bi-stars"></i>&emsp;ラルカディア</a></dt>
+                        
+            <dd class="n44">&nbsp;<a href="#sport">スポーツ健康科学部事務室</a></dd>
+             <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="d88">開講期間</a></li>
+                    <li><a href="#" data-id="d89">土日祝</a></li>
+                    <li><a href="#"data-id="d90">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="d88">
+                        <dd class="zikan">(月・火・木・金)</dd>
+                        <dd class="zikan">&emsp;10:00～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(水)</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="d89">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="d90">
+                        <dd class="zikan">&emsp;13:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+        <div id="nadeshikodesune">
+            <dt class="many"><a href="https://www.ritsumei.ac.jp/news/detail/?id=2327" ><i class="bi bi-link-45deg"></i></a><a href="#nadeshikodesune">&emsp;ナデシコ食堂</a></dt>
+                        
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a106">開講期間</a></li>
+                    <li><a href="#" data-id="a107">土日祝</a></li>
+                    <li><a href="#"data-id="a108">休暇期間</a></li>
+                    
+                </ul>
+                    <section class="content active" id="a106">
+                         <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;7:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">&emsp;(ラストオーダー)</dd>
+                        <dd class="zikan">&emsp;&emsp;14:00</dd>
+                        <dd class="zikan">&emsp;(ドリンクラストオーダー)</dd>
+                        <dd class="zikan">&emsp;&emsp;16:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a107">
+                        <dd class="zikan">(土)</dd>
+                        <dd class="zikan">&emsp;11:00～14:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">&emsp;(ラストオーダー)</dd>
+                        <dd class="zikan">&emsp;&emsp;13:30</dd>
+                        <dd class="zikan">&emsp;(ドリンクラストオーダー)</dd>
+                        <dd class="zikan">&emsp;&emsp;13:45</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※営業時間は変更する場合があります。</dd>
+
+                    </section>
+                    <section class="content" id="a108">  
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd> 
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+<div id="ro-mudesune">
+            <dt class="many"><a href="#ro-mudesune"><a href="https://www.ritsumei.ac.jp/events/"><i class="bi bi-link-45deg"></i></a>&emsp;ローム記念館</a></dt>
+                        
+              <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a109">開講期間</a></li>
+                    <li><a href="#" data-id="a110">土日祝</a></li>
+                    <li><a href="#"data-id="a111">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a109">
+                        <dd class="zikan">
+                             ※教科書販売&nbsp;(春)</dd> 
+                         <dd class="zikan">
+                             ※公開までしばらくお待ちください。</dd> 
+                    </section>      
+                    <section class="content" id="a110">
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd> 
+
+                    </section>
+                    <section class="content" id="a111">  
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd> 
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+
+          <div id="mediadesune">
+            <dt class="many"><a href="#mediadesune"><a href="https://www.ritsumei.ac.jp/lib/a05/060/"><i class="bi bi-link-45deg"></i></a>&emsp;メディアセンター</a></dt>
+            <dd>
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#"class="active" data-id="a112">開講期間</a></li>
+                    <li><a href="#" data-id="a113">土日祝</a></li>
+                    <li><a href="#"data-id="a114">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a112">
+                        <dd class="zikan">&emsp;8:30～22:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">[ぴあら]</dd>
+                        <dd class="zikan">&emsp;9:00～22:00&emsp;(一部予約)</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内にはマルチメディアルームもあります。</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a113">
+                        <dd class="zikan">(土日)</dd>
+                        <dd class="zikan">&emsp;10:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(補講日)</dd>
+                        <dd class="zikan">&emsp;9:00～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(祝日)</dd>
+                        <dd class="zikan">&emsp;閉館</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内にはマルチメディアルームもあります。</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                    <section class="content" id="a114">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:00～19:30</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(土日)</dd>
+                        <dd class="zikan">&emsp;10:00～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(祝日)</dd>
+                        <dd class="zikan">&emsp;閉館</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内にはマルチメディアルームもあります。</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+
+          </div>
+
+          <div id="gymdesune">
+            <dt class="many"><a href="#gymdesune"><a href="https://www.ritsumei.ac.jp/lifecareer/activity/facility/gym/bkc/"><i class="bi bi-link-45deg"></i></a>&emsp;BKCジム</a></dt>
+                         <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a115">開講期間</a></li>
+                    <li><a href="#" data-id="a116">土日祝</a></li>
+                    <li><a href="#"data-id="a117">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a115">
+                        <dd class="zikan">(平日)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※授業時間を除く</dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                         
+                    </section>      
+                    <section class="content" id="a116">
+                        <dd class="zikan">(土)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan"></dd> 
+                        <dd class="zikan">(日・祝)</dd> 
+                        <dd class="zikan">&emsp;9:00～19:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※授業時間を除く</dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+
+                    </section>
+                    <section class="content" id="a117">  
+                         <dd class="zikan">(平日)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(土)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan"></dd> 
+                        <dd class="zikan">(日・祝)</dd> 
+                        <dd class="zikan">&emsp;9:00～19:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+          <div id="kenkocommonsdesune">
+            <dt class="many"><a href="#kenkocommonsdesune"><a href="https://www.ritsumei.ac.jp/lifecareer/activity/facility/bkc-shc/"><i class="bi bi-link-45deg"></i></a>&emsp;BKC健康コモンズ</a></dt>
+                         <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="b115">開講期間</a></li>
+                    <li><a href="#" data-id="b116">土日祝</a></li>
+                    <li><a href="#"data-id="b117">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="b115">
+                        <dd class="zikan">(平日)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan">&emsp;(最終退館)</dd>
+                        <dd class="zikan">&emsp;&emsp;21:20</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                         
+                    </section>      
+                    <section class="content" id="b116">
+                        <dd class="zikan">&emsp;9:00～19:00</dd>
+                        <dd class="zikan">&emsp;(最終退館)</dd>
+                        <dd class="zikan">&emsp;&emsp;19:20</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+
+                    </section>
+                    <section class="content" id="b117">  
+                        <dd class="zikan">(平日)</dd> 
+                        <dd class="zikan">&emsp;9:00～21:00</dd>
+                        <dd class="zikan">&emsp;(最終退館)</dd>
+                        <dd class="zikan">&emsp;&emsp;21:20</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(土日祝)</dd> 
+                        <dd class="zikan">&emsp;9:00～19:00</dd>
+                        <dd class="zikan">&emsp;(最終退館)</dd>
+                        <dd class="zikan">&emsp;&emsp;19:20</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※館内の施設は要予約</dd>
+                        <dd class="zikan">※開館時間は変更する場合があります。</dd>
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+          
+
+          <div id="shirudesune">
+            <dt class="many"><a href="#shirudesune"><a href="https://www.ritsumei.ac.jp/features/ritsumeshi_bkc/shiru_cafe/"><i class="bi bi-link-45deg"></i></a>&emsp;知るカフェ</a></dt>
+
+            <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a118">開講期間</a></li>
+                    <li><a href="#" data-id="a119">土日祝</a></li>
+                    <li><a href="#"data-id="a120">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a118">
+                        <dd class="zikan">(平日)</dd> 
+                        <dd class="zikan">&emsp;14:00～17:45</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">&emsp;(ラストオーダー)</dd>
+                         <dd class="zikan">&emsp;&emsp;16:30</dd> 
+                         <dd class="zikan"></dd>
+                         <dd class="zikan">※営業時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="a119">
+                        <dd class="zikan">&emsp;閉店</dd> 
+
+                    </section>
+                    <section class="content" id="a120">  
+                        <dd class="zikan">※公開までしばらくお待ちください。</dd> 
+                    </section>
+                </div>
+              </dd>
+            </dd>
+        </div>
+
+          <div id="athletedesune">
+            <dt class="many"><a href="#athletedesune"><a href="https://www.ritsumei.ac.jp/athletes_support/"><i class="bi bi-link-45deg"></i></a>&emsp;アスリートジム</a></dt>
+            <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#" class="active" data-id="a121">開講期間</a></li>
+                    <li><a href="#" data-id="a122">土日祝</a></li>
+                    <li><a href="#"data-id="a123">休暇期間</a></li>
+                </ul>
+                    <section class="content active" id="a121">
+                         <dd class="zikan">※HPにてご確認ください</dd>
+                    </section>      
+                    <section class="content" id="a122">
+                        <dd class="zikan">※HPにてご確認ください</dd> 
+
+                    </section>
+                    <section class="content" id="a123">  
+                        <dd class="zikan">※HPにてご確認ください</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n45">&nbsp;<a href="#sportcenter">スポーツ強化センター</a></dd>
+             <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#"  data-id="y88">開講期間</a></li>
+                    <li><a href="#" data-id="y89">土日祝</a></li>
+                    <li><a href="#"data-id="y90">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="y88">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="y89">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="y90">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+
+              <dd class="n46">&nbsp;<a href="#sportoffice">スポーツ強化オフィス</a></dd>
+             <dd>
+                <div class="container">
+                <ul class="menu">
+                    <li><a href="#"  data-id="z88">開講期間</a></li>
+                    <li><a href="#" data-id="z89">土日祝</a></li>
+                    <li><a href="#"data-id="z90">休暇期間</a></li>
+                </ul>
+                    <section class="content" id="z88">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                    </section>      
+                    <section class="content" id="z89">
+                        <dd class="zikan">&emsp;閉室</dd>
+                    </section>
+                    <section class="content" id="z90">
+                        <dd class="zikan">(平日)</dd>
+                        <dd class="zikan">&emsp;9:30～11:30</dd>
+                        <dd class="zikan">&emsp;12:30～17:00</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">(休日)</dd>
+                        <dd class="zikan">&emsp;閉室</dd>
+                        <dd class="zikan"></dd>
+                        <dd class="zikan">※開室時間は変更する場合があります。</dd>
+                        <dd class="zikan">※8/11～8/20・12/28～1/8の間は閉室</dd>
+                    </section>
+                </div>
+              </dd>
+              </dd>
+
+          </div>
+
+        <div id="librarydesune">
+            <dt id="library" class="many"><a href="#librarydesune"><a href="https://www.ritsumei.ac.jp/lib/a05/070/"><i class="bi bi-link-45deg"></i></a>&emsp;メディアライブラリー</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+
+
+          <div id="multdesune">
+            <dt id="mult" class="many"><a href="#multdesune"><a href="https://www.ritsumei.ac.jp/lib/d09/010/"><i class="bi bi-link-45deg"></i></a>&emsp;マルチメディアルーム</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#purizumu">プリズムハウス</a></dd>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#mediadesune">メディアセンター </a></dd>
+            <dd class="zikan"></dd>
+
+
+          </div>
+
+          <div id="piaradesune">
+            <dt id="piara" class="many"><a href="#piaradesune"><a href="https://www.ritsumei.ac.jp/lib/d02/010/"><i class="bi bi-link-45deg"></i></a>&emsp;ぴあら</a></dt>
+              <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#mediadesune">メディアセンター </a></dd>
+            <dd class="zikan"></dd>
+
+
+          </div>
+
+          <div id="physicsdesune">
+            <dt id="physics" class="many"><a href="#physicsdesune"><a href="https://www.ritsumei.ac.jp/~kht23151/kakekomi/"><i class="bi bi-link-45deg"></i></a>&emsp;物理駆け込み寺</a></dt>
+            
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#west">ウエストウイング</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="mathdesune">
+            <dt id="math" class="many"><a href="#mathdesune"><a href="https://rms2005.org/"><i class="bi bi-link-45deg"></i></a>&emsp;数学学修相談会</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#mediadesune">メディアセンター </a></dd>
+            <dd class="zikan"></dd>
+            
+
+
+          </div>
+
+
+
+          <div id="yunicafedesune">
+            <dt id="yunicafe" class="many"><a href="#yunicafedesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_008.html"><i class="bi bi-link-45deg"></i></a>&emsp;ユニオンカフェテリア</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#ni">ユニオンスクエア</a></dd>
+            <dd class="zikan"></dd>
+    
+          </div>
+            
+          <div id="yuniteidesune">
+            <dt id="yunitei" class="many"><a href="#yuniteidesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_009.html"><i class="bi bi-link-45deg"></i></a>&emsp;ユニオンフードコート(定食)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#ni">ユニオンスクエア</a></dd>
+            <dd class="zikan"></dd>
+    
+          </div>
+
+          
+
+          <div id="yuniharadesune">
+            <dt id="yunihara" class="many"><a href="#yuniharadesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_009.html"><i class="bi bi-link-45deg"></i></a>&emsp;ユニオンフードコート(ハラル)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#ni">ユニオンスクエア</a></dd>
+            <dd class="zikan"></dd>
+    
+          </div>
+
+        
+          <div id="yunishopdesune">
+            <dt id="yunishop" class="many"><a href="#yunishopdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_007.html"><i class="bi bi-link-45deg"></i></a>&emsp;ユニオンショップ</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#ni">ユニオンスクエア</a></dd>
+            <dd class="zikan"></dd>
+    
+          </div>
+
+          <div id="yunicleandesune">
+            <dt id="yuniclean" class="many"><a href="#yunicleandesune"><a href="https://www.ritsco-op.jp/"><i class="bi bi-link-45deg"></i></a>&emsp;クリーニング</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#ni">ユニオンスクエア</a></dd>
+            <dd class="zikan"></dd>
+    
+          </div>
+
+          <div id="rinkucafedesune">
+            <dt id="rinkucafe" class="many"><a href="#rinkucafedesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_004.html"><i class="bi bi-link-45deg"></i></a>&emsp;リンクカフェテリア</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+  
+          </div>
+
+          <div id="rinkupcdesune">
+            <dt id="rinkupc" class="many"><a href="#rinkupcdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_002.html"><i class="bi bi-link-45deg"></i></a>&emsp;リンクショップ(PCs&nbsp;,BOOK)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+ 
+          </div>
+
+          <div id="rinkutraveldesune">
+            <dt id="rinkutravel" class="many"><a href="#rinkutraveldesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_003.html"><i class="bi bi-link-45deg"></i></a>&emsp;リンクショップ(Travel)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+  
+          </div>
+
+          <div id="rinkumealdesune">
+            <dt id="rinkumeal" class="many"><a href="#rinkumealdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_005.html"><i class="bi bi-link-45deg"></i></a>&emsp;リンクミールショップ</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+ 
+          </div>
+
+          <div id="rinkucenterdesune">
+            <dt id="rinkucenter" class="many"><a href="#rinkucenterdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_001.html"><i class="bi bi-link-45deg"></i></a>&emsp;BKCセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+ 
+          </div>
+
+          <div id="rinkusumaidesune">
+            <dt id="rinkusumai" class="many"><a href="#rinkusumaidesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_006.html"><i class="bi bi-link-45deg"></i></a></i>&emsp;BKC住まい探しセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="chemistrydesune">
+            <dt id="chemistry" class="many"><a href="#chemistrydesune"><a href="https://www.ritsumei.ac.jp/ls/introduce/kakekomi/toppage/"><i class="bi bi-link-45deg"></i></a>&emsp;化学・生物駆け込み寺</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="seimeidesune">
+            <dt id="seimei" class="many"><a href="#seimeidesune"><a href="https://www.ritsumei.ac.jp/ls/"><i class="bi bi-link-45deg"></i></a>&emsp;生命科学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rinku">リンクスクエア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="dreamdesune">
+            <dt id="dream" class="many"><a href="#dreamdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/b_012.html"><i class="bi bi-link-45deg"></i></a>&emsp;ドリームクロスカフェ</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+           <div id="kokusaidesune">
+            <dt id="kokusai" class="many"><a href="#kokusaidesune"><a href="https://www.ritsumei.ac.jp/studyabroad/planning/about/"><i class="bi bi-link-45deg"></i></a>&emsp;国際教育センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+           <div id="languagedesune">
+            <dt id="language" class="many"><a href="#languagedesune"><a href="https://www.ritsumei.ac.jp/gengo/"><i class="bi bi-link-45deg"></i></a>&emsp;言語教育センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+           <div id="acquiredesune">
+            <dt id="acquire" class="many"><a href="#acquiredesune"><a href="https://www.ritsumei.ac.jp/gengo/"><i class="bi bi-link-45deg"></i></a>&emsp;言語習得センター&nbsp;(CLA)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+           <div id="supportdesune">
+            <dt id="support" class="many"><a href="#supportdesune"><a href="https://www.ritsumei.ac.jp/ssr/"><i class="bi bi-link-45deg"></i></a>&emsp;学生サポートセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="progressdesune">
+            <dt id="progress" class="many"><a href="#progressdesune"><a href="https://www.ritsco-op.jp/shopinformation/shopinfo/bkc/post.html"><i class="bi bi-link-45deg"></i></a>&emsp;ベーカリーカフェプログレッソ</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="commonsdesune">
+            <dt id="commons" class="many"><a href="#commonsdesune"><a href="https://www.ritsumei.ac.jp/bkc_commons/about/"><i class="bi bi-link-45deg"></i></a>&emsp;BKC&nbsp;COMMONS</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="kyosyokudesune">
+            <dt id="kyosyoku" class="many"><a href="#kyosyokudesune"><a href="https://www.ritsumei.ac.jp/kyoshoku/"><i class="bi bi-link-45deg"></i></a>&emsp;教職教育課</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="kyosyokucenterdesune">
+            <dt id="kyosyokucenter" class="many"><a href="#kyosyokucenterdesune"><a href="https://www.ritsumei.ac.jp/kyoshoku/kyoshokucenter/index.html/"><i class="bi bi-link-45deg"></i></a>&emsp;教職支援センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#akuros">アクロスウィング </a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="bbpdesune">
+            <dt id="bbp" class="many"><a href="#bbpdesune"><a href="https://www.ritsumei.ac.jp/bbp/reservation/support/#bkc_tab"><i class="bi bi-link-45deg"></i></a>&emsp;Beyond&nbsp;Boders&nbsp;Plaza</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+        
+
+
+          <div id="aioldesune">
+            <dt id="aiol" class="many"><a href="#aioldesune"><a href="https://www.ritsumei.ac.jp/se2017/making-things/aiol/"><i class="bi bi-link-45deg"></i></a>&emsp;AIOL&nbsp;(アイオーラボ)</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#east">イーストウイング</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="hokendesune">
+            <dt id="hoken" class="many"><a href="#hokendesune"><a href="https://www.ritsumei.ac.jp/health/medical/#bkc"><i class="bi bi-link-45deg"></i></a>&emsp;保健センター</a></dt>
+
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#west">ウエストウイング</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="kyariadesune">
+            <dt id="kyaria" class="many"><a href="#kyariadesune"><a href="https://www.ritsumei.ac.jp/career/"><i class="bi bi-link-45deg"></i></a>&emsp;キャリアセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#purizumu">プリズムハウス</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="manabidesune">
+            <dt id="manabi" class="many"><a href="#manabidesune"><a href="https://www.ritsumei.ac.jp/pathways-future/"><i class="bi bi-link-45deg"></i></a>&emsp;学びステーション</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#purizumu">プリズムハウス</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+         <div id="exdesune">
+            <dt id="ex" class="many"><a href="#exdesune"><a href="https://www.ritsumei.ac.jp/extension/"><i class="bi bi-link-45deg"></i></a>&emsp;エクステーションセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#purizumu">プリズムハウス</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+
+          <div id="officedesune">
+            <dt id="office" class="many"><a href="#officedesune"><a href="https://www.ritsumei.ac.jp/ssp/"><i class="bi bi-link-45deg"></i></a>&emsp;BKC学生オフィス</a></dt>
+           <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="shiendesune">
+            <dt id="shien" class="many"><a href="#shiendesune"><a href="https://www.ritsumei.ac.jp/drc/"><i class="bi bi-link-45deg"></i></a>&emsp;障害学生支援室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#central">セントラルアーク</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="keizaidesune">
+            <dt id="keizai" class="many"><a href="#keizaidesune"><a href="https://www.ritsumei.ac.jp/ec/"><i class="bi bi-link-45deg"></i></a>&emsp;経済学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#adoseminario">アドセミナリオ</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="syokumanedesune">
+            <dt id="syokumane" class="many"><a href="#syokumanedesune"><a href="https://www.ritsumei.ac.jp/gast/"><i class="bi bi-link-45deg"></i></a>&emsp;食マネジメント学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#adoseminario">アドセミナリオ</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+          
+          <div id="kyoyodesune">
+            <dt id="kyoyo" class="many"><a href="#kyoyodesune"><a href="https://www.ritsumei.ac.jp/liberalarts/"><i class="bi bi-link-45deg"></i></a>&emsp;教養教育センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#adoseminario">アドセミナリオ</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+          
+          <div id="kyariakyoikudesune">
+            <dt id="kyariakyoiku" class="many"><a href="#kyariakyoikudesune"><a href="https://www.ritsumei.ac.jp/cec/"><i class="bi bi-link-45deg"></i></a>&emsp;キャリア教育センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#adoseminario">アドセミナリオ</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+          
+          <div id="servicedesune">
+            <dt id="service" class="many"><a href="#servicedesune"><a href="https://www.ritsumei.ac.jp/slc/"><i class="bi bi-link-45deg"></i></a>&emsp;サービスラーニングセンター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#adoseminario">アドセミナリオ</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="zyoridesune">
+            <dt id="zyori" class="many"><a href="#zyoridesune"><a href="https://www.ritsumei.ac.jp/ise/"><i class="bi bi-link-45deg"></i></a>&emsp;情報理工学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#creation">クリエーション&emsp;コア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="rikodesune">
+            <dt id="riko" class="many"><a href="#rikodesune"><a href="https://www.ritsumei.ac.jp/se2017/"><i class="bi bi-link-45deg"></i></a>&emsp;理工学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#core">コアステーション</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="kyankandesune">
+            <dt id="kyankan" class="many"><a href="#kyankandesune"><a href="https://www.ritsumei.ac.jp/inquiry/"><i class="bi bi-link-45deg"></i></a>&emsp;キャンパス管理室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#core">コアステーション</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="yakudesune">
+            <dt id="yaku" class="many"><a href="#yakudesune"><a href="https://www.ritsumei.ac.jp/ph/"><i class="bi bi-link-45deg"></i></a>&emsp;薬学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#science">サイエンス&emsp;コア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="sportdesune">
+            <dt id="sport" class="many"><a href="#sportdesune"><a href="https://www.ritsumei.ac.jp/shs/"><i class="bi bi-link-45deg"></i></a>&emsp;スポーツ健康科学部事務室</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#rarukadelia">ラルカディア</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="sportcenterdesune">
+            <dt id="sportcenter" class="many"><a href="#sportcenterdesune"><a href="https://www.ritsumei.ac.jp/athletes_support/"><i class="bi bi-link-45deg"></i></a>&emsp;スポーツ強化センター</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#athletedesune">アスリートジム</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="sportofficedesune">
+            <dt id="sportoffice" class="many"><a href="#sportofficedesune"><a href="https://www.ritsumei.ac.jp/athletes_support/"><i class="bi bi-link-45deg"></i></a>&emsp;スポーツ強化オフィス</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#athletedesune">アスリートジム</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+          <div id="shinrodesune">
+            <dt id="shinro" class="many"><a href="#shinrodesune"><a href="https://secure.ritsumei.ac.jp/career/"><i class="bi bi-link-45deg"></i></a>&emsp;進路・就職ライブラリー</a></dt>
+            <dd class="zikan"></dd>
+            <dd class="zikan">&emsp;<i class="bi bi-building-fill"></i><a href="#purizumu">プリズムハウス</a></dd>
+            <dd class="zikan"></dd>
+
+          </div>
+
+
+
+        </dl>
+
+
+      </div>
+
+  </main>
+
+  <footer>
+
+    <nav>
+      <a href="#ichi"><button id="one" onclick="$('#two').css('background-color','#EFEFEF');if(window.localStorage.getItem('color')=='black'){$(this).css('background-color','#000000');}else if(window.localStorage.getItem('color')=='blue'){$(this).css('background-color','#5D70A3');}else{$(this).css('background-color','#EB5A5A');}"><i class="bi bi-pin-map-fill"></i></button></a>
+      <a href="#ni"><button id="two" onclick="$('#one').css('background-color','#EFEFEF');$(this).css('background-color','#EB5A5A');if(window.localStorage.getItem('color')=='black'){$(this).css('background-color','#000000');}else if(window.localStorage.getItem('color')=='blue'){$(this).css('background-color','#5D70A3');}else{$(this).css('background-color','#EB5A5A');}"><i class="bi bi-list"></i></button></a>
+    </nav>
+
+  </footer>
+  <div id="settingMenu" >
+    <img id="batu"src="batu.png" onclick='$(this).parent().hide(200);'>
+    <div id="ber">
+        <div onclick="$('.coverr').fadeIn(200);">
+            <h1>デフォルト画面</h1>
+            <div class="coverr">
+             <img id="indexhtml" class="defImg" src="def.PNG"><img id="bikehtml" class="defImg" src="tyuurinn.PNG" ><img id="weatherhtml" class="defImg" src="picture/kousui.PNG" ><img id="sisetuhtml" class="defImg" src="picture/sisetu.PNG">         
+            </div>            
+        </div>
+        <div onclick="$('#colorMenu').fadeIn(200);">
+            <h1>ベースカラー</h1>
+            <div id="colorMenu">
+                <button id="redMenu" onclick="$('header,footer,.change').css('background-color','#EB5A5A'); $('main').css('background-color','#F6E1E1'); $('#kkkk').css('color','black');window.localStorage.setItem('color',null);">赤</button>
+                <button id="blueMenu" onclick="$('header,footer,.change').css('background-color','#5D70A3'); $('main').css('background-color','#D6E5ED');$('#kkkk').css('color','black');window.localStorage.setItem('color','blue');">青</button>
+                <button id="blackMenu" onclick="$('header,footer,.change').css('background-color','#000000'); $('main').css('background-color','#817F7F');$('#kkkk').css('color','white'); window.localStorage.setItem('color','black');">黒</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+
+<!--jQueryの読み込みの後に、以下のコードを追加 -->
+
+<script>
+$(function () {
+  
+  searchWord = function(){
+    var searchText = $(this).val(), // 検索ボックスに入力された値
+        targetText;
+
+    $('.target-area dt').each(function() {
+      targetText = $(this).text();
+
+
+
+      // 検索対象となるリストに入力された文字列が存在するかどうかを判断
+      if (targetText.indexOf(searchText) != -1) {
+        $(this).removeClass('hidden');
+      } else {
+        $(this).addClass('hidden');
+      }
+    });
+  };
+
+  // searchWordの実行
+  $('#search-text').on('input', searchWord);
+});
+</script>
+<script>
+  $(document).ready(function() {
+    $(".view_timer").each(function(index, target) {
+      var startDate = $(this).attr("data-start-date");
+      var endDate = $(this).attr("data-end-date");
+      var nowDate = new Date();
+  
+      if (startDate) {
+        startDate = new Date(startDate);
+      }
+      else {
+        startDate = nowDate;
+      }
+      if (endDate) {
+        endDate = new Date(endDate);
+      }
+  
+      if (startDate <= nowDate && (!endDate || nowDate <= endDate)) {
+        $(this).show();
+        lfilename = '';
+      }
+      else {
+        $(this).hide();
+      }
+    });
+  });
+  //scrollTo(640,0)
+  
+  if(!window.localStorage.getItem('color')){}else if(window.localStorage.getItem('color')=='blue'){
+    $('header,footer,#one').css('background-color','#5D70A3'); $('main').css('background-color','#D6E5ED');}else if(window.localStorage.getItem('color')=='black'){
+              $('header,footer,#one').css('background-color','#000000'); $('main').css('background-color','#817F7F');$('#kkkk').css('color','white');}
+                if(window.localStorage.getItem('situ')=='tyuurinn.PNG'){
+        
+              
+                  $('#bikehtml').attr('id', 'Imgs');
+        }else{
+            $('#indexhtml').attr('id', 'Imgs');
+        }
+        $('.defImg').on('click',function(){
+        let vaa=$(this).attr('src');
+//       console.log(vaa);
+        window.localStorage.setItem('situ',vaa);
+//        console.log(window.localStorage.getItem('situ'));
+        $('.defImg').removeAttr('id', 'Imgs');
+
+        $(this).attr('id', 'Imgs');
+        })
+</script> 
+
+ 
+
+  <script src="main1.js"></script>
+  <script src="main2.js"></script>
+  <script src="main3.js"></script>
+
+
+ 
+
+</body>
+</html>
