@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* second */
+
+
+main {
+  
+  overflow: scroll;
+}
+
+
+/* スクロールの幅の設定 */
+main::-webkit-scrollbar {
+ width: 0;
+ height: 0;
+}
+ 
+/* スクロールの背景の設定 */
+main::-webkit-scrollbar-track {
+ border-radius: 0;
+ background: rgba(110, 108, 108, 0.2);
+}
+ 
+/* ドラックできるスクロール部の設定 */
+main::-webkit-scrollbar-thumb {
+ border-radius: 0;
+ background: #EB5A5A;
+}
+
+
+
+.second dl{
+   margin: 32px 16px; 
+}
+
+.second div{
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+.second dt{
+    font-size: 36px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 32px 32px 32px;
+    position: relative;
+}
+
+dd > a{
+  text-decoration: none;
+  box-shadow:  6px 6px 6px #ccc;
+  color: #444;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+dt a{
+    text-decoration: none;
+    color: black;
+}
+
+.bi-building-fill{
+    
+    color: darksalmon;
+    font-size: 60px;
+}
+
+.bi-star-fill{
+    color: #ccc;
+    font-size: 48px;
+}
+
+
+
+
+.second dd{
+    font-size: 32px;
+    font-weight: bold;
+      padding: 8px 0;
+  margin: 0;
+  display: none;
+}
+
+
+
+.many::after{
+  content:'+';
+  font-size: 80px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: transform .3s ;
+}
+
+dl > div.appear .many::after{
+  transform: rotate(45deg);
+}
+
+dl > div.appear dd{
+  display: block;
+  animation: .3s fadeIn;
+}
+
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px);
+   }
+
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.yellow{
+    color: yellow;
+    
+}
+
+
+.zikan{
+  background: lightgoldenrodyellow;
+}
+
+
+
+
+
+
+
+
